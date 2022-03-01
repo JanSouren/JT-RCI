@@ -311,6 +311,10 @@ JTRCI <- function(data = NA,
     
     # pass dataframe to environment
     JTRCIdf <<- JTRCIdf
+    # Suggestion: return(JTRCIdf) in this way it is more clear for the user
+    # the plot and the table functions have a data = input but this is not used inside the function block
+    # only the most recent generated JTRCIdf can be used without saving first and renaming later to JTRCIdf
+    # 
     
   }
   
